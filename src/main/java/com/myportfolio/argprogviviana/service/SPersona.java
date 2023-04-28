@@ -17,18 +17,25 @@ public class SPersona{
     public List<Persona> verPersonas(){
         return  personaRepo.findAll();
     }
+
     public Persona buscarPersona(Integer id) {
         Persona perso= personaRepo.findById(id).orElse(null);
         return perso;
     }
+
     public void crearPersona(Persona perso){
         personaRepo.save(perso);
     }
+
     public void borrarPersona(int id){
         personaRepo.deleteById(id);
     }
+
     public void editarPersona(Persona perso){
         personaRepo.save(perso);
     }
 
+    public Persona login(String email, String password) {
+        return personaRepo.findByEmailAndPassword(email, password);
+    }
 }
