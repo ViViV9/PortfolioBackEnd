@@ -18,8 +18,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("experiencia")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
 public class CExperiencia {
     @Autowired
     SExperiencia experienciaServ;

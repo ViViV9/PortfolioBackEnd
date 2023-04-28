@@ -10,8 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("persona")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
 public class CPersona {
     @Autowired
     SPersona personaServ;
