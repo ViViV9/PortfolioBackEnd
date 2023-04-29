@@ -21,7 +21,7 @@ public class CPersona {
     @Autowired
     SPersona personaServ;
 
-    ///@GetMapping("/buscar/{id}")
+    ///@GetMapping("/buscar/{id}") esto lo comenté para probar si me funcionan los cambios
     @GetMapping("/persona/{id}")
     @ResponseBody
     public Persona buscarPersona(@PathVariable int id) {
